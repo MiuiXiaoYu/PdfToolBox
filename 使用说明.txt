@@ -58,7 +58,8 @@
 【常见问题】
   Q: 提示「未找到 SumatraPDF」
   A: 单文件版已内置引擎。若用单目录版，请保证 SumatraPDF*.exe 在主程序同级
-     或 _internal 目录下。
+     或 _internal 目录下；也可以到 https://github.com/sumatrapdfreader/sumatrapdf
+     下载官方版，再把它的完整路径写进 config.ini。
 
   Q: 打印机列表是空的
   A: 点「刷新」。仍为空说明系统没有安装打印机驱动，先去装驱动。
@@ -96,5 +97,6 @@
     在主程序同级目录放一个 SumatraPDF.exe，
     或新建 config.ini 写入 sumatra_path=<完整路径>（一行，等号前后不加空格），
     程序会优先使用它；也可以直接复制 config.example 改名为 config.ini 再填路径。
+    SumatraPDF 官方下载：https://github.com/sumatrapdfreader/sumatrapdf
   · 想让程序记住常用设置：
     目前不保存，每次启动用系统默认打印机。需要的话可以反馈。

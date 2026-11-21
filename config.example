@@ -15,4 +15,5 @@
 # 下面每一项对应一个可配置项，需要时取消注释并填值。
 
 # SumatraPDF 可执行文件完整路径（「批量打印」的静默打印引擎）
+# 获取地址：https://github.com/sumatrapdfreader/sumatrapdf
 sumatra_path=C:\path\to\SumatraPDF.exe
