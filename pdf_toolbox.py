@@ -50,7 +50,7 @@ if sys.stderr is None:
     sys.stderr = io.StringIO()
 
 APP_TITLE = "PDF 工具箱"
-APP_VERSION = "1.3"
+APP_VERSION = "1.4"
 CREATE_NO_WINDOW = getattr(subprocess, "CREATE_NO_WINDOW", 0x08000000)
 
 IMG_EXTS = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp", ".gif")
