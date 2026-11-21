@@ -1,0 +1,57 @@
+# ============================================================
+# PDF 工具箱 —— Git 忽略规则
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- PyInstaller 打包产物 ----------
+# build/ 是中间目录，dist/ 是 exe 输出，*.spec 是自动生成的构建脚本
+build/
+dist/
+*.spec
+release/
+
+# ---------- 发行压缩包 ----------
+# 由 release/ 打包生成，需要归档时请上传到网盘或 Release 附件
+*.zip
+
+# ---------- 程序运行 / 自检产物 ----------
+*.log
+PrintLog_*.txt
+.selftest*.txt
+合并_*.pdf
+*.tmp
+
+# ---------- 临时脚本草稿 ----------
+.tmp_*
+
+# ---------- 编辑器与系统 ----------
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------- 本机专属配置 ----------
+# config.ini 记录本机绝对路径（如 SumatraPDF 位置），换机器就失效。
+# 仓库只跟踪 config.example 样例；本地把它复制为 config.ini 填真实值即可。
+config.ini
+# SumatraPath.txt 是旧版单行配置，已由 config.ini 取代，同样不进版本库。
+SumatraPath.txt
+
+# ---------- WorkBuddy 工作区数据 ----------
+# 存放会话记忆与中间状态。想把笔记一起纳入版本管理就删掉下面这行。
+.workbuddy/
